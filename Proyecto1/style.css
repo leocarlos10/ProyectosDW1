@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 1.5rem;    
+    background: linear-gradient(90deg, #FFFF, #6C757D);  /* Azul a gris */
+}
+
+.cont-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    flex: 1;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.items{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.cont-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex:1;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* estilos de texto */
+pre {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* limita la longitud del texto a 60 caracteres */
+p{
+    max-width: 60ch;
+    font-size: 0.9rem;
+}
+
+.main{
+    background-color: #FFFF;
+}
+
+
+
+.cont{
+    min-height: 100vh;
+   
+}
+
+#cont-introduccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-intr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+   
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#linea-tiempo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#galeria-imagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo{
+    width: 32px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   background-color: #FFFF;
+    padding: 4rem;
+}
+
+.datos-personales{
+   flex: 1;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.redes-sociales{
+    flex : 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.redes-sociales .lista >li > a{
+    text-decoration: none;
+    color:#1B2631  ;
+}
+
+.redes-sociales .lista > li,
+.datos-personales > ol > li{
+    list-style: none;
+}
+
+.redes-sociales .lista > li > a:hover{
+    color:#707c88 ;
+}
