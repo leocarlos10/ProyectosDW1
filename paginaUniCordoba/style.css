@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* codigo header */
+
+.container {
+    border-top: 3px solid #348829 ;
+}
+
+.fusion-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.menu{
+    color: #348829;
+}
+
+.menu-text{
+    color: #2a871d;
+}
+
+.link-item:hover{
+    color: #348829;
+}
+
+.cont-redes{
+    margin: 12px;
+}
+
+.fusion-social-networks{
+    padding: 2px;
+}
+
+.icono{
+    margin: 4px;
+}
+
+.bi-search{
+    color: black;
+}
+
+.container-2{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.cont-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
+}
+
+.cont-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 3;
+}
+
+.menu-2{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+
+}
+
+.link-item{
+    padding: 10px;
+    color: black;
+}
+
+
+
+.megamenu-holder{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background: #ffffff;
+    transform: translateY(-10px);
+    transition: all 0.5s;
+}
+
+.megamenu-toggle{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+.megamenu-holder{
+    padding: 0;
+    top: 11.5rem;
+    left: 10rem;
+    right: 2rem;
+}
+
+.megamenu,
+.menulist{
+    display: flex;
+    flex-direction: row;
+}
+
+.cont-img-logo{
+    flex: 1;
+}
+
+.menulist{
+    padding: 1px;
+    flex: 3;
+}
+
+#panel-logo{
+    width: 100%;
+    height: 100%;
+}
+
+.submenu-item{
+    font-size: 12px;
+}
+
+.submenu-item:hover{
+    background:  rgba(0, 0, 0, 0.1);
+}
+
+.submenu-item > a{
+     color: #333333;;
+}
+
+.megamenu-title > a{
+    color: black;
+}
+
+.submenu, .megamenu-item{
+    padding :10px;
+}
+
+/* estilos cont-main-1 */
+.contentboxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contentbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+.contentbox span {
+    text-align: center;
+    font-size: 40px;
+    color: #a0ce4e;
+}
+
+.contentbox p {
+    text-align: center;
+}
+
+.bi-mortarboard-fill, 
+.bi-globe2 , 
+.bi-person-vcard-fill,
+.bi-house-door {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 40px;
+    color: #a0ce4e;
+}
+
+.cont-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-items: center;
+    padding: 0 1rem;
+    padding-top: 10px;
+    background-color: rgba(0,108,135,0.55)
+}
+
+.img-layout-2{
+    width: 100%;
+    height: 100%;
+    grid-row: span 2;
+    object-fit: cover; /* ajusta la imagen para llenar el espacio sin distorsionarse */
+}
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.strong{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cont-paginacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.text-pag-1, .text-pag-2 {
+    text-align: end;
+    font-size: 19px;
+    color: black;
+}
+
+.cont-main-1{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cont-canal{
+    padding-left: 2rem;
+}
+
+/* estilos cont-main-2 */
+
+.cont-main-2{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cont-img-animacion{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+
+.slide-content{
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+    width: 200%;
+    animation: scroll 10s linear infinite   ; 
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+   100%{
+    transform: translateX(-50%);
+   }
+}
+
+.cont-encuentranos{
+    padding: 4rem;
+}
+
+
+.cont-franja-imagen{
+    background-image: url(img/Franja-unicordoba-estereo-website.png);
+    padding: 5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.img-2{
+    width: 50%;
+    height: auto;
+}
+
+.img-3{
+    width: 200px;
+    transition: transform 0.5s ease-out;
+}
+
+.img-3:hover{
+    transform: scale(1.1);
+}
+
+.cont-img-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cont-img-1{
+    padding: 1rem;
+    margin: 0px 10px ;
+}
+
+ .img-4{
+    width: 300px;
+    height: 160px;
+}
+
+/* estilos del footer1 */
+
+.cont-info{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    background-image: url(img/university_ft_bg2a.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cont-info-2 {
+    border-top: 1px solid;
+    text-align: center;
+    font-size: 11px;
+}
+
+
+
+
+
+
+
+
+
