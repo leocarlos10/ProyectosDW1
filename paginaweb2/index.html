@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad de Antioquia</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
+</head>
+<body>
+    <header class="top-bar">
+        <div class=" cont cont-logo ">
+            <a href="https://www.gov.co/" title="Clic aquí para ir a la página gov.co" target="_blank" class="equalgov">
+                <img src="img/white-gov-co.png" alt="Clic aquí para ir a la página gov.co" width="100" height="24" style="background : #33691e;">
+            </a>
+        </div>
+        <div class=" cont cont-iconos ">
+            <div class="ctn_form_search">
+                <form id="cse-search-box" action="#" name="search-form">
+                    <div class="section-b">
+                        <div class="expandable-holder">
+                            <input autocomplete="off"  type="text" id="search-input" name="q">
+                        </div>
+                        <label class="search">
+                            <i class="bi bi-search"></i>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            
+            <button  class ="menu_language"  title="Cambiar idioma" name="Cambiar idioma" >
+                <i class="bi bi-globe"></i>
+            </button>
+            
+            <div class="cont-menu-lenguage" >
+                <ul class="mdl-menu " >
+                    <li class="mdl-menu__item ">
+                        <p class="tlt_home item">Idiomas  <i class="bi bi-globe icon" style=" color:  rgba(0, 0, 0, 0.6);"></i> </p>
+                    </li>
+                    <li class="mdl-menu__item mdl-js-ripple-effect" tabindex="-1" data-upgraded=",MaterialRipple">
+                        <a title="Español" class="is-active item" href="/wps/portal/udea">ESPAÑOL <span class="icon"><i class="bi bi-check-lg"></i></span> </a>
+                    </li>
+                    <li class="mdl-menu__item mdl-js-ripple-effect" tabindex="-1" data-upgraded=",MaterialRipple">
+                        <a title="Inglés" href="/wps/portal/udea/web/home" class="item">INGLÉS <span class="icon"><i class="bi bi-check-lg "></i></span> </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <button  class ="menu_access" >
+                <i class="bi bi-universal-access"></i>
+            </button>
+            
+            <div class="cont-menu-access" >
+                <ul class="mdl-menu">
+                    <li class="mdl-menu__item" style="border-bottom: 1px solid #ddd;" >
+                        <p class="tlt_home item">Accesibilidad  <i class="bi bi-universal-access icon" style="color:  rgba(0, 0, 0, 0.6);"></i></p>
+                    </li>
+                    <li class="mdl-menu__item ">
+                        <a title="Tamaño del texto" class="active_font item" href="javascript:void(0)">Aumento de Texto <span class="material-symbols-outlined icon" style="color:  rgba(0, 0, 0, 0.6);">format_size</span></a>
+                    </li>
+                    <li class="mdl-menu__item ">
+                        <a id="Luna" title="Modo Oscuro" class="active_dark item" href="javascript:void(0)">Modo Oscuro <span class="icon"><i class="bi bi-moon" style="color:  rgba(0, 0, 0, 0.6);"></i></span> </i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="top_bar">
+        <div class="top_colm_equal">
+          <a href="https://udea.edu.co/wps/portal/udea/web/inicio/somos-udea/estudiantes" title="Estudiantes" class = "menu_item" >
+            Estudiantes
+          </a>
+      
+          <a href = "https://udea.edu.co/wps/portal/udea/web/inicio/somos-udea/profesores" title="Profesores" class = "menu_item" >
+            Profesores
+          </a>
+      
+          <a href = "https://udea.edu.co/wps/portal/udea/web/inicio/somos-udea/empleados" title="Empleados" class = "menu_item"  >
+            Empleados
+          </a>
+      
+          <a href = "https://udea.edu.co/wps/portal/udea/web/inicio/somos-udea/egresados" title="Egresados" class = "menu_item">
+            Egresados
+          </a>
+      
+          <a href = "https://udea.edu.co/wps/portal/udea/web/inicio/somos-udea/jubilados" title="Jubilados" class = "menu_item">
+            Jubilados
+          </a>
+        </div>
+
+        <!-- separacion -->
+
+        <div class="top_colm_equal _small _rigth" >
+          <a href = "https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/participa" title="Participa" class = "menu_item" >
+            Participa
+          </a>
+      
+          <a href = "https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/atencion-ciudadano/transparencia-acceso-informacion" title="Transparencia" class = "menu_item"   >
+            Transparencia
+          </a>
+      
+          <a href = "https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/atencion-ciudadano" title="Atención al ciudadano" class = "menu_item"  >
+            Atención al ciudadano
+          </a>
+        </div>
+      </div>
+
+      <header class="custom">
+        <div class="box_logo">
+          <a href="/wps/portal/udea/web/inicio/" title="Portal Universidad de Antioquia">
+            <img src="img/logosimbolo-horizontal.png" 
+                 alt="Portal Universidad de Antioquia" style="width: 424px;">
+          </a>
+        </div>
+      
+        <div class="_right">
+            <div class="cont-btn">
+                        <!-- Botón de enlaces de interés (escritorio) -->
+                <button aria-label="Enlaces de Interés" 
+                        class="mdl-button enlace " 
+                        title="Enlaces de Interés" 
+                        name="Enlaces de Interés">
+                        <span class="material-symbols-outlined" style="color: #8bc34a;">
+                            sort
+                            </span>
+                            <span class="text"> Enlaces de interés</span>
+                </button>
+            
+                <!-- Botón de ingreso -->
+                <div class="act-login">
+                    <button aria-label="Ingresar"  
+                            id="menu-login-action" 
+                            class="mdl-button login " 
+                            title="Ingresar" 
+                            name="Ingresar">
+                            <span class="material-symbols-outlined">
+                                person
+                                </span>
+                    <span class="text">INGRESAR</span>
+                    </button>
+            
+                    <!-- Menú desplegable de login -->
+                    <ul class="mdl-menu2 " >
+                    <li class="mdl-menu__item ">
+                        <a href="/wps/myportal/udea/web/inicio" title="Iniciar sesión" class="item2">Iniciar sesión</a>
+                        </li>
+                    <li class="mdl-menu__item " >
+                        <a title="Registrarse" href="/wps/portal/udea/web/inicio/registro-usuarios/!ut/p/z1/lZHRboJQEES_hQ9odrhAgccLAl4rCEYQ98WgIYSEqrG0319qH5q0ltJ92-TM7GaGmEriU_XWNlXfnk9VN-w7ftwnmRXowsdyhcyCjBMz9CKlkIK2N8BxfaFLE0s86QOQBWmyWfnpbCGIp-i_gHWBAYjd0LYxD01rmh6_jMR_7_8AeNx-S3xDxhL4y4O_PamMAJmbWKkRKWHaxl0HCW8tPAOIHNAcVBD319eaFsRNdz58dieusR83xC91Vx8_KqVyPO3Lc57nJVr1EPBOato7rm3zYA!!/?uri=toolbar:close" class="item2">Registrarse</a>
+                        </li>
+                    <li class="mdl-menu__item ">
+                        <a title="Obtener/Recuperar" href="/wps/portal/udea/web/inicio/obtener-recuperar-usuario-contrasena/" class="item2">Obtener/Recuperar</a>
+                        </li>
+                    </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <div class="menu_primary">
+        <a href="/wps/portal/udea/web/inicio/acerca-udea" class="menu-link menu-item-1" title="La UdeA">La UdeA</a>
+        <a href="/wps/portal/udea/web/inicio/estudiar-udea/estudiar-udea" class="menu-link menu-item-2" title="Estudiar en la UdeA">Estudiar en la UdeA</a>
+        <a href="/wps/portal/udea/web/inicio/docencia" class="menu-link menu-item-3" title="Docencia">Docencia</a>
+        <a href="/wps/portal/udea/web/inicio/investigacion" class="menu-link menu-item-4" title="Investigación">Investigación</a>
+        <a href="/wps/portal/udea/web/inicio/extension" class="menu-link menu-item-5" title="Extensión">Extensión</a>
+        <a href="/wps/portal/udea/web/inicio/internacional" class="menu-link menu-item-6" title="Internacional">Internacional</a>
+        <a href="/wps/portal/udea/web/inicio/cultura" class="menu-link menu-item-7" title="Cultura">Cultura</a>
+        <a href="/wps/portal/udea/web/inicio/bienestar" class="menu-link menu-item-8" title="Bienestar">Bienestar</a>
+        <a href="/wps/portal/udea/web/inicio/unidades-academicas" class="menu-link menu-item-9" title="Unidades académicas">Unidades académicas</a>
+      </div>
+
+</body>
